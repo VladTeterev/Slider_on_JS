@@ -1,21 +1,21 @@
 // Массив с картинками, описанием, заголовками
 let images = [
   {
-    url: "../images/first_image.png",
+    url: "../images/image1.jpg",
     title: "Rostov-on-Don, Admiral",
     city: "Rostov-on-Don<br>LCD admiral",
     area: "81 m2",
     time: "3.5 months",
   },
   {
-    url: "../images/second_image.png",
+    url: "../images/image2.jpg",
     title: "Sochi Thieves",
     city: "Sochi<br>Thieves",
     area: "105 m2",
     time: "4 months",
   },
   {
-    url: "../images/third_image.png",
+    url: "../images/image3.jpg",
     title: "Rostov-on-Don Patriotic",
     city: "Rostov-on-Don<br>Patriotic",
     area: "93 m2",
