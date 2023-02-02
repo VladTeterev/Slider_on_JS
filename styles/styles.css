@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Yeseva One', sans-serif;
+    src: url(../fonts/YesevaOne-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    ;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    background-color: #131313;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+/* Описание */
+.slider_discription {
+    width: 442px;
+    margin-top: 176px;
+    margin-left: 150px;
+}
+
+h1,
+.project_info h2 {
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    color: rgba(227, 184, 115, 1);
+    text-transform: uppercase;
+}
+
+h1 {
+    line-height: 37px;
+    font-size: 27px;
+}
+
+p {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    margin-top: 9px;
+    color: #ffffff;
+}
+
+.info_repair p {
+    font-size: 13px;
+}
+
+.title_discription p {
+    margin-top: 34px;
+}
+
+.project_info {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 85px 85px;
+    margin-top: 42px;
+}
+
+
+.cards__title {
+    font-size: 18px;
+    line-height: 24.95px;
+    margin-bottom: 9px;
+}
+
+.cards__text {
+    font-size: 13px;
+    line-height: 21.28px;
+    position: absolute;
+    opacity: 0;
+}
+
+.cards__active {
+    width: 161px;
+    height: 42px;
+    opacity: 1;
+    font-size: 13px;
+    line-height: 21.28px;
+    color: white;
+}
+
+
+
+
+/* Стрелки */
+.slider__navig {
+    display: flex;
+    margin-top: 70px;
+}
+
+.slider__arrow:hover {
+    cursor: pointer;
+}
+
+
+
+
+/* Точки */
+.slider__dots {
+    display: flex;
+    margin: 0px 20px;
+}
+
+.dot_item {
+    margin: 0px 12px;
+    background: url(../images/dots_nonactive.svg);
+    width: 10px;
+    height: 10px;
+}
+
+.dot__active {
+    background: url(../images/dots_active.svg);
+    width: 10.4px;
+    height: 10px;
+}
+
+.dot_item:hover {
+    background: url(../images/dots_active.svg);
+    cursor: pointer;
+    
+}
+
+
+
+
+
+/* Заголовки картинок */
+.slider__titles {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 45.36px;
+    height: 24.08px;
+}
+
+.slider__title {
+    font-size: 14px;
+    line-height: 19.4px;
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 60.5px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'Yeseva One';
+}
+
+.slider__title:hover {
+    color: rgba(227, 184, 115, 1);
+    padding-bottom: 6.68px;
+    cursor: pointer;
+}
+
+.title__active {
+    color: rgba(227, 184, 115, 1);
+    padding-bottom: 6.68px;
+    border-bottom: 1px solid rgba(227, 184, 115, 1);
+}
+
+
+
+
+
+/* Картинки */
+.slider {
+    position: relative;
+    width: 679px;
+    margin-top: 107px;
+    margin-right: 150px;
+}
+
+.slider__images {
+    position: relative;
+    width: 679px;
+    height: 482px;
+}
+
+.slider__images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+
+.slider__images .image.active {
+    opacity: 1;
+}
